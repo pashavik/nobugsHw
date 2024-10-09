@@ -1,6 +1,9 @@
 package org.example;
 
 import org.example.hw1.book.Book;
+import org.example.hw1.car.Car;
+import org.example.hw1.clock.Clock;
+import org.example.hw1.point.Point;
 import org.example.hw1.student.Student;
 
 public class Main {
@@ -22,5 +25,36 @@ public class Main {
 
         student.print();
 
+        System.out.println("=======================");
+
+        Point point = new Point();
+        point.setX(1);
+        point.setY(1);
+
+        point.moveUp();
+        point.moveRight();
+
+        System.out.println(point.getX());
+        System.out.println(point.getY());
+
+        System.out.println("=======================");
+
+        Clock clock = new Clock();
+        clock.setHour(1);
+        clock.setMinutes(30);
+        clock.setSeconds(10);
+        clock.tick();
+        clock.readTime();
+
+        System.out.println("=======================");
+
+        Car car = new Car();
+        car.setBrand("Lada");
+        car.setModel("Zver'");
+        car.setYear(1990);
+
+        car.start();
+        car.stop();
+        car.distance();
     }
 }
