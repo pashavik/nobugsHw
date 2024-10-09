@@ -1,4 +1,4 @@
-package hwAPI;
+package api.hwAPI;
 
 import io.restassured.RestAssured;
 import io.restassured.filter.log.RequestLoggingFilter;
@@ -24,7 +24,7 @@ public class UnicornTests {
     public void createUnicornTest(){
         given()
                 .contentType(ContentType.JSON)
-                .body("{\n" + "  \"name\": \"SkyFall \",\n" + "  \"hair_color\": \"Night\"\n" + "}")
+                .body("{\"name\":\"Sparkle Angel\", \"age\":2, \"colour\":\"red\" }")
                 .post("/unicorns ")
                 .then().statusCode(201)
                 .body("$", hasKey("_id"));
