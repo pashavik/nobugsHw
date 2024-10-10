@@ -18,7 +18,6 @@ public class ParabankUITests {
     @BeforeAll
     public static void setUp(){
         Configuration.baseUrl = "https://parabank.parasoft.com";
-//        Configuration.browser = "firefox";
         Configuration.timeout = 10;
     }
 

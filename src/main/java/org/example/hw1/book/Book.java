@@ -5,7 +5,6 @@ public class Book implements Displayable{
     private String author;
     private int year;
 
-
     public String getName() {
         return name;
     }

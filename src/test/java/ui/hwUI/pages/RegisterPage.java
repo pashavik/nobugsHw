@@ -34,8 +34,6 @@ public class RegisterPage {
     SelenideElement passwordError = element(Selectors.byId("customer.password.errors"));
     SelenideElement confirmPasswordError = element(Selectors.byId("repeatedPassword.errors"));
 
-
-
     public void open(){
         Selenide.open("/parabank/register.htm");
     }
@@ -70,10 +68,8 @@ public class RegisterPage {
         }
 
         registerButton.click();
-        }
-
-
     }
+}
 
 
 

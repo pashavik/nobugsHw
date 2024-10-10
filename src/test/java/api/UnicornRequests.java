@@ -44,13 +44,4 @@ public class UnicornRequests {
                 .then()
                 .statusCode(404);
     }
-
-//    public static void checkUpdatedUnicornColor(Unicorn unicorn){
-//        given()
-//                .get("/unicorns/" + unicorn.getId())
-//                .then()
-//                .assertThat()
-//                .statusCode(200)
-//                .body("colour", equalTo());
-//    }
 }
